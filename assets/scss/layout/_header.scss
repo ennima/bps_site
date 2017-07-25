@@ -1,0 +1,188 @@
+///
+/// Cascade by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Header */
+
+	#header {
+		@include vendor('display', 'flex');
+		@include vendor('justify-content', 'space-between');
+		@include vendor('align-items', 'center');
+		@include vendor('transition', 'background-color #{_duration(transition)} ease');
+		background-color: _palette(bg);
+		box-shadow: 0 0 0.5rem 0 _palette(border);
+		height: 3.5rem;
+		left: 0;
+		line-height: 3.5rem;
+		padding: 0 0 12px 1.5rem;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: _misc(z-index-base);
+
+		a {
+			color: #424242;
+			font-size: 0.8rem;
+			text-decoration: none;
+			text-transform: uppercase;
+			border: 0;
+
+			&:active, &:hover, &:focus {
+				color: _palette(accent1a, bg);
+			}
+		}
+
+		.logo {
+			display: block;
+			font-weight: _font(weight-bold);
+			height: inherit;
+			letter-spacing: 0.07rem;
+			line-height: inherit;
+
+			span {
+				font-weight: _font(weight);
+			}
+			img{
+				padding-top:15px;
+				
+			}
+		}
+
+		nav {
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					display: inline-block;
+					padding: 0;
+
+					a {
+						display: inline-block;
+						padding: 0 1.5rem 0 1.5rem;
+						position: relative;
+
+						&[href="#menu"] {
+							@include icon;
+							padding-right: 3rem;
+
+							&:before {
+								content: '\f0c9'; // Hamburger icon;
+								display: block;
+								height: 100%;
+								position: absolute;
+								right: 1.5rem;
+								text-align: center;
+								top: 0;
+								width: 1rem;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.alt {
+			background-color: transparent;
+			box-shadow: none;
+			color: _palette(bg);
+		}
+
+		@include breakpoint(xlarge) {
+			// height: 2.75rem;
+			// line-height: 2.75rem;
+			// padding: 0 0 5px 0.75rem;
+
+			.logo{
+				// background-color: #ff0;
+				img{
+					padding-top:9px;
+				
+				}
+			}
+			
+		}
+
+		@include breakpoint(large) {
+			// height: 2.75rem;
+			// line-height: 2.75rem;
+			// padding: 0 0 5px 0.75rem;
+
+			.logo{
+				 // background-color: #f0a;
+				img{
+					padding-top:11px;
+				
+				}
+			}
+			
+		}
+
+		@include breakpoint(small) {
+			height: 2.75rem;
+			line-height: 2.75rem;
+			padding: 0 0 5px 0.75rem;
+
+			.logo{
+				// background-color: #00a;
+				img{
+					padding-top:6px;
+					width: 33px;
+    				height: auto;
+				}
+			}
+			nav {
+				ul {
+					li {
+						a {
+							padding: 0 0.75rem 0 0.75rem;
+
+							&[href="#menu"] {
+								padding-right: 2.5rem;
+
+								&:before {
+									right: 1rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		@include breakpoint(xsmall) {
+			.logo {
+				// background-color: #aaa;
+				span {
+					display: none;
+				}
+				img{
+					padding-top:5px;
+				
+				}
+			}
+
+			nav {
+				ul {
+					li {
+						a {
+							&[href="#menu"] {
+								&:only-child {
+									width: 4rem;
+									text-indent: 4rem;
+									white-space: nowrap;
+
+									&:before {
+										text-indent: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
