@@ -41,10 +41,10 @@
 		highlight:			accent1,
 
 		accent1: (
-			bg:				#2990cd,
-			fg:				mix(#2990cd, #ffffff, 25%),
+			bg:				rgb(63, 160, 214),
+			fg:				mix(rgb(63, 160, 214), #ffffff, 25%),
 			fg-bold:		#ffffff,
-			fg-light:		mix(#2990cd, #ffffff, 40%),
+			fg-light:		mix(rgb(63, 160, 214), #ffffff, 40%),
 			border:			rgba(255,255,255,0.25),
 			border-bg:		rgba(255,255,255,0.075),
 			border2:		rgba(255,255,255,0.5),
@@ -52,10 +52,10 @@
 			highlight:		accent1
 		),
 		accent1a: (
-			bg:				#2990cd,
-			fg:				mix(#2990cd, #424242, 25%),
+			bg:				rgb(63, 160, 214),
+			fg:				mix(rgb(63, 160, 214), #424242, 25%),
 			fg-bold:		#ffffff,
-			fg-light:		mix(#2990cd, #424242, 40%),
+			fg-light:		mix(rgb(63, 160, 214), #424242, 40%),
 			border:			rgba(66,66,66,0.25),
 			border-bg:		rgba(66,66,66,0.075),
 			border2:		rgba(66,66,66,0.5),
@@ -76,10 +76,10 @@
 		),
 
 		accent3: (
-			bg:				#dc3d41,
-			fg:				mix(#dc3d41, #ffffff, 25%),
+			bg:				rgb(226, 120, 101),
+			fg:				mix(rgb(226, 120, 101), #ffffff, 25%),
 			fg-bold:		#ffffff,
-			fg-light:		mix(#dc3d41, #ffffff, 40%),
+			fg-light:		mix(rgb(226, 120, 101), #ffffff, 40%),
 			border:			rgba(255,255,255,0.25),
 			border-bg:		rgba(255,255,255,0.075),
 			border2:		rgba(255,255,255,0.5),
@@ -88,10 +88,10 @@
 		),
 
 		accent4: (
-			bg:				#0f669a,
-			fg:				mix(#0f669a, #ffffff, 25%),
+			bg:				rgb(0, 108, 180),
+			fg:				mix(rgb(0, 108, 180), #ffffff, 25%),
 			fg-bold:		#ffffff,
-			fg-light:		mix(#0f669a, #ffffff, 40%),
+			fg-light:		mix(rgb(0, 108, 180), #ffffff, 40%),
 			border:			rgba(255,255,255,0.25),
 			border-bg:		rgba(255,255,255,0.075),
 			border2:		rgba(255,255,255,0.5),
